@@ -28,7 +28,7 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideImageRepository(api: PicsumApi): ImageRepository{
+    fun provideImageRepository(api: PicsumApi): ImageRepository {
         return ImageRepositoryImpl(api)
     }
 }

@@ -21,7 +21,7 @@ class GetImagesUseCase @Inject constructor(
         } catch (e: HttpException) {
             emit(Resource.Error<List<Image>>(e.localizedMessage ?: "Error occurred"))
         } catch (e: IOException) {
-            emit(Resource.Error<List<Image>>("Failed to connect to server"))
+            emit(Resource.Error<List<Image>>("Failed to connect to server \uD83D\uDE22"))
         }
     }
 }
